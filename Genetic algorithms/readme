@@ -1,0 +1,25 @@
+1. Definition
+“Genetic Algorithms are good at taking large, potentially huge search spaces and navigating them, looking for optimal combinations of things, solutions you might not otherwise find in a lifetime.”  - Salvatore Mangano Computer Design, May 1995
+
+2. Whar are GAs?
+Genetic algorithms (GAs) are powerful computing search techniques that can find approximate solutions to various optimization and search problems.
+Genetic algorithms are a particular class of evolutionary algorithms that use techniques inspired by evolutionary biology, such as inheritance, mutation, selection, and crossover (also called recombination). Genetic algorithms are categorized as global search heuristics.
+Genetic algorithms are implemented as computer simulations in which a population of abstract representations (called chromosomes, the genotype, or the genome) of candidate solutions (called individuals, creatures, or phenotypes) to an optimization problem evolves toward better solutions.
+Traditionally, solutions are represented in binary as strings of 0s and 1s, but other encodings are also possible (Holland 1975).
+The evolution usually starts from a population of randomly generated individuals and continues in generations.
+In each generation, the fitness of every individual in the population is evaluated, and multiple individuals are selected from the current population (based on their fitness) and modified (recombined and possibly mutated) to form a new population.
+The new population is then used in the next iteration of the algorithm.
+Commonly, the algorithm terminates when a maximum number of generations has been produced or a satisfactory fitness level has been reached for the population.
+If the algorithm has terminated due to a maximum number of generations, a satisfactory solution may or may not have been reached.
+
+
+
+
+
+
+
+
+
+
+
+
