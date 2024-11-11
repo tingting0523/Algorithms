@@ -1,1 +1,27 @@
 
+Dijkstra算法是一个经典的图算法，用于解决单源最短路径问题，即在一个加权图中，从起始节点到其他所有节点的最短路径。该算法由荷兰计算机科学家Edsger W. Dijkstra于1956年提出。
+
+Dijkstra算法的核心思想是：
+通过逐步扩展已经找到的最短路径，找到从起始节点到所有其他节点的最短路径。
+每次选择一个未处理的节点，更新从起始节点到它的最短路径。
+
+算法步骤
+1.初始化：设置起始节点的距离为0，所有其他节点的距离为无穷大（表示未知）。
+2.设置未处理节点集：所有节点都初始化为未处理。
+3.选择当前最短路径的节点：从未处理的节点中选择一个最短距离的节点作为当前节点。
+4.更新邻居节点的距离：对于当前节点的每一个邻居节点，计算通过当前节点到达邻居节点的距离，若计算出的新距离比该邻居节点当前的距离短，则更新该邻居节点的距离。
+5.标记当前节点为已处理：一旦所有邻居节点的距离被更新，当前节点就被标记为已处理。
+6.重复步骤3-5：继续选择未处理的节点，更新最短路径，直到所有节点都被处理。
+
+
+Dijkstra's algorithm, a common approach in graph theory, can determine the shortest route between intersections on a road map. 图论中的一种常用方法，可以确定路线图上交叉路口之间的最短路线。
+
+Dijkstra's algorithm efficiently finds the shortest path from a starting node (intersection) to a target node (another intersection) on a weighted graph (where weights represent distances).
+在加权图（其中权重表示距离）上有效地找到从起点（交叉点）到目标节点（另一个交叉点）的最短路径。
+
+a high-level explanation and a simple diagram to illustrate the concept:
+1. Graph Representation: Represent the intersections as nodes and the roads as edges with weights(distances). 图形表示：将交叉路口表示为节点，将道路表示为边，并带有权重（距离）。
+2. Initialization: Start from the initial intersection (source node). Set the distance to the source node to 0 and the distance to all other nodes to infinity.初始化：从初始交集（源节点）开始。将到源节点的距离设置为 0，将到所有其他节点的距离设置为无穷大。
+3. Priority Queue: First, use a priority queue to explore the nodes with the smallest known distance. Priority Queue：首先，使用优先级队列来探索已知距离最小的节点。
+4. Relaxation: For each node, update the distances to its adjacent nodes if a shorter path is found. 松弛：对于每个节点，如果找到较短的路径，则更新到其相邻节点的距离。
+5. Repeat: Continue until all nodes have been processed or the shortest distance to the target node is determined. 重复：继续，直到处理完所有节点或确定到目标节点的最短距离。
